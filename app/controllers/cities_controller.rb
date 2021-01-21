@@ -15,6 +15,7 @@ class CitiesController < ApplicationController
 
   # POST /cities
   def create
+    # binding.pry
     @city = City.new(city_params)
 
     if @city.save
